@@ -117,10 +117,10 @@ int setup(int pin)
   DHTPIN = pin;
 
   if (getuid() != 0)
-    exit(EXIT_FAILURE);
+    return(EXIT_FAILURE);
 
   if (wiringPiSetup () == -1)
-    exit(EXIT_FAILURE);
+    return(EXIT_FAILURE);
 
   return EXIT_SUCCESS;
 }
