@@ -1,8 +1,7 @@
-package main
+package dht22
 
 /*
 #include "dht22.h"
-#include <stdlib.h>       // for free()
 #cgo LDFLAGS: -L. -lwiringPi
 */
 import "C"
